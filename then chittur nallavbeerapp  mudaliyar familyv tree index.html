@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chittur Nallaveerappa-Mudaliyar Family | Since 1775</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+Tamil:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crimson:#7B1C1C;
+  --crimson-deep:#5A1010;
+  --crimson-light:#A32828;
+  --gold:#C9962A;
+  --gold-light:#E5B84A;
+  --gold-pale:#F5E4B0;
+  --cream:#FDF6E3;
+  --cream-dark:#F3E8C8;
+  --parchment:#E8D5A0;
+  --text-dark:#2C1810;
+  --text-mid:#5C3520;
+  --text-light:#8B6040;
+  --white:#FFFDF5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text-dark);font-family:'Cormorant Garamond',serif;overflow-x:hidden}
+
+/* BORDER PATTERNS */
+.border-pattern{background:repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 3px,transparent 3px,transparent 12px),repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 3px,transparent 3px,transparent 12px);height:6px}
+.divider{display:flex;align-items:center;gap:1rem;margin:2rem 0}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.divider-ornament{color:var(--gold);font-size:1.5rem;flex-shrink:0}
+
+/* NAVIGATION */
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(91,16,16,0.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--gold)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Cinzel',serif;color:var(--gold-light);font-size:0.9rem;letter-spacing:0.15em;font-weight:600}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--cream);text-decoration:none;font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:0.12em;transition:color 0.3s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-member-btn{background:var(--gold);color:var(--crimson-deep);border:none;padding:0.4rem 1.2rem;font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.1em;cursor:pointer;border-radius:2px;font-weight:700;transition:all 0.3s}
+.nav-member-btn:hover{background:var(--gold-light);transform:translateY(-1px)}
+.nav-member-btn.logged-in{background:var(--cream);color:var(--crimson)}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(180deg,var(--crimson-deep) 0%,var(--crimson) 40%,#8B3A1A 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:6rem 2rem 4rem}
+.hero-pattern{position:absolute;inset:0;opacity:0.08;background-image:repeating-linear-gradient(45deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%),repeating-linear-gradient(-45deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%);background-size:20px 20px}
+.hero-lotus{font-size:3rem;color:var(--gold);margin-bottom:1rem;animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.hero-tamil{font-family:'Noto Sans Tamil',sans-serif;color:var(--gold-pale);font-size:1.1rem;letter-spacing:0.1em;margin-bottom:0.5rem;opacity:0.9}
+.hero-title{font-family:'Cinzel Decorative',serif;color:var(--gold-light);font-size:clamp(1.8rem,5vw,3.8rem);font-weight:900;line-height:1.15;margin-bottom:0.5rem;text-shadow:0 2px 20px rgba(0,0,0,0.5)}
+.hero-sub{font-family:'Cinzel',serif;color:var(--cream);font-size:clamp(0.85rem,2vw,1.1rem);letter-spacing:0.25em;font-weight:400;margin-bottom:2rem;opacity:0.9}
+.hero-year{display:inline-block;border:1px solid var(--gold);color:var(--gold-light);font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.3em;padding:0.5rem 2rem;margin-bottom:2.5rem}
+.hero-desc{max-width:620px;color:var(--cream-dark);font-size:1.15rem;line-height:1.9;font-style:italic;margin-bottom:3rem}
+.hero-cta-group{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.btn-primary{background:var(--gold);color:var(--crimson-deep);padding:0.85rem 2.5rem;font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.15em;border:none;cursor:pointer;font-weight:700;text-decoration:none;display:inline-block;transition:all 0.3s;border-radius:2px}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.btn-outline{border:1.5px solid var(--gold);color:var(--gold-light);padding:0.85rem 2.5rem;font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.15em;background:transparent;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block;transition:all 0.3s;border-radius:2px}
+.btn-outline:hover{background:rgba(201,150,42,0.15);transform:translateY(-2px)}
+
+/* SECTIONS */
+section{padding:5rem 2rem}
+.container{max-width:1100px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:3.5rem}
+.section-eyebrow{font-family:'Cinzel',serif;color:var(--gold);font-size:0.75rem;letter-spacing:0.35em;text-transform:uppercase;margin-bottom:0.75rem;display:block}
+.section-title{font-family:'Cinzel Decorative',serif;color:var(--crimson);font-size:clamp(1.5rem,4vw,2.5rem);font-weight:700;line-height:1.2}
+.section-title.light{color:var(--gold-light)}
+
+/* HISTORY */
+.history-section{background:var(--white)}
+.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.history-text h3{font-family:'Cinzel',serif;color:var(--crimson);font-size:1.2rem;margin-bottom:1rem;font-weight:600}
+.history-text p{color:var(--text-mid);font-size:1.1rem;line-height:1.9;margin-bottom:1.2rem}
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0.5rem;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),var(--crimson))}
+.timeline-item{position:relative;margin-bottom:2.5rem}
+.timeline-item::before{content:'';position:absolute;left:-1.65rem;top:0.35rem;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--crimson)}
+.timeline-year{font-family:'Cinzel',serif;color:var(--gold);font-size:0.8rem;letter-spacing:0.15em;margin-bottom:0.3rem;font-weight:600}
+.timeline-title{font-family:'Cinzel',serif;color:var(--crimson);font-size:0.95rem;margin-bottom:0.3rem;font-weight:600}
+.timeline-desc{color:var(--text-mid);font-size:1rem;line-height:1.7}
+.stat-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.stat-card{background:var(--cream);border:1px solid var(--parchment);border-left:4px solid var(--gold);padding:1.25rem;border-radius:2px}
+.stat-num{font-family:'Cinzel Decorative',serif;color:var(--crimson);font-size:2rem;font-weight:700;line-height:1}
+.stat-label{color:var(--text-light);font-size:0.85rem;font-family:'Cinzel',serif;letter-spacing:0.1em;margin-top:0.3rem}
+
+/* TEMPLE */
+.temple-section{background:linear-gradient(135deg,var(--crimson-deep) 0%,var(--crimson) 60%,#6B2020 100%);position:relative;overflow:hidden}
+.temple-section::before{content:'';position:absolute;inset:0;opacity:0.05;background-image:radial-gradient(circle,var(--gold) 1px,transparent 1px);background-size:24px 24px}
+.temple-card{background:rgba(255,253,245,0.06);border:1px solid rgba(201,150,42,0.35);border-radius:4px;padding:3rem;backdrop-filter:blur(4px)}
+.temple-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.temple-info h3{font-family:'Cinzel',serif;color:var(--gold-light);font-size:1rem;letter-spacing:0.15em;margin-bottom:1.5rem;font-weight:600}
+.temple-feature{display:flex;gap:1rem;margin-bottom:1.5rem;align-items:flex-start}
+.temple-icon{width:42px;height:42px;border-radius:50%;background:rgba(201,150,42,0.2);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem}
+.temple-feature-text h4{font-family:'Cinzel',serif;color:var(--gold-pale);font-size:0.9rem;margin-bottom:0.25rem;font-weight:500}
+.temple-feature-text p{color:rgba(253,246,227,0.8);font-size:1rem;line-height:1.7}
+.temple-img-placeholder{background:rgba(0,0,0,0.3);border:1px solid rgba(201,150,42,0.3);border-radius:4px;aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:var(--gold-pale);font-family:'Cinzel',serif;font-size:0.85rem;letter-spacing:0.1em;text-align:center;padding:2rem;position:relative;overflow:hidden}
+.temple-gopuram{font-size:4rem;margin-bottom:0.5rem}
+.upload-btn-small{background:rgba(201,150,42,0.2);border:1px solid var(--gold);color:var(--gold-light);padding:0.4rem 1rem;font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.1em;cursor:pointer;border-radius:2px;margin-top:0.5rem;display:none}
+.upload-btn-small.visible{display:block}
+#temple-photo-input{display:none}
+.temple-photo-display{width:100%;height:100%;object-fit:cover;border-radius:4px;display:none}
+
+/* FAMILY TREE */
+.tree-section{background:var(--cream-dark)}
+.tree-controls{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;align-items:center;justify-content:space-between}
+.search-box{flex:1;min-width:200px;position:relative}
+.search-box input{width:100%;padding:0.65rem 1rem 0.65rem 2.5rem;border:1.5px solid var(--parchment);background:var(--white);font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--text-dark);border-radius:2px;outline:none;transition:border-color 0.3s}
+.search-box input:focus{border-color:var(--gold)}
+.search-box::before{content:'🔍';position:absolute;left:0.75rem;top:50%;transform:translateY(-50%);font-size:0.85rem}
+.tree-wrapper{background:var(--white);border:1px solid var(--parchment);border-radius:4px;overflow:auto;min-height:400px;position:relative}
+.tree-container{padding:2rem;min-width:800px;position:relative}
+.tree-root{display:flex;flex-direction:column;align-items:center}
+.generation-label{font-family:'Cinzel',serif;color:var(--text-light);font-size:0.7rem;letter-spacing:0.2em;text-align:center;margin-bottom:0.5rem;background:var(--cream);padding:0.2rem 0.8rem;border-radius:10px;border:1px solid var(--parchment)}
+.gen-row{display:flex;gap:1.5rem;justify-content:center;margin:0.5rem 0;flex-wrap:wrap}
+.person-card{background:var(--white);border:1.5px solid var(--parchment);border-radius:4px;padding:0.75rem 1rem;text-align:center;min-width:130px;max-width:160px;cursor:pointer;transition:all 0.25s;position:relative}
+.person-card:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(123,28,28,0.1);transform:translateY(-2px)}
+.person-card.founder{border-color:var(--gold);border-width:2px;background:linear-gradient(135deg,#FFF9EC,var(--white))}
+.person-card.female{border-left:4px solid #C4809A}
+.person-card.male{border-left:4px solid var(--crimson-light)}
+.person-avatar{width:38px;height:38px;border-radius:50%;margin:0 auto 0.5rem;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;font-family:'Cinzel',serif;font-size:0.85rem}
+.avatar-male{background:rgba(123,28,28,0.1);color:var(--crimson);border:1px solid rgba(123,28,28,0.2)}
+.avatar-female{background:rgba(196,128,154,0.15);color:#8B3A5A;border:1px solid rgba(196,128,154,0.3)}
+.person-name{font-family:'Cinzel',serif;color:var(--text-dark);font-size:0.72rem;font-weight:600;line-height:1.3;margin-bottom:0.2rem}
+.person-years{color:var(--text-light);font-size:0.75rem}
+.person-role{background:var(--gold-pale);color:var(--text-mid);font-size:0.6rem;font-family:'Cinzel',serif;letter-spacing:0.08em;padding:0.15rem 0.4rem;border-radius:10px;margin-top:0.3rem;display:inline-block}
+.connector{text-align:center;color:var(--parchment);font-size:1.5rem;line-height:1;margin:0.3rem 0}
+.tree-line{width:2px;height:2rem;background:linear-gradient(180deg,var(--gold),var(--parchment));margin:0 auto}
+
+/* MEMBER PANEL */
+.member-section{background:var(--white)}
+.member-grid{display:grid;grid-template-columns:1fr 2fr;gap:3rem}
+.panel-nav{background:var(--cream);border:1px solid var(--parchment);border-radius:4px;padding:1.5rem;height:fit-content}
+.panel-nav-title{font-family:'Cinzel',serif;color:var(--crimson);font-size:0.8rem;letter-spacing:0.15em;margin-bottom:1rem;font-weight:600}
+.panel-nav-item{display:block;width:100%;text-align:left;padding:0.65rem 1rem;font-family:'Cinzel',serif;font-size:0.78rem;letter-spacing:0.08em;color:var(--text-mid);background:none;border:none;cursor:pointer;border-radius:2px;margin-bottom:0.25rem;transition:all 0.2s}
+.panel-nav-item:hover,.panel-nav-item.active{background:var(--crimson);color:var(--cream)}
+.panel-content{background:var(--cream);border:1px solid var(--parchment);border-radius:4px;padding:2rem}
+.form-group{margin-bottom:1.5rem}
+.form-label{font-family:'Cinzel',serif;color:var(--text-mid);font-size:0.78rem;letter-spacing:0.1em;display:block;margin-bottom:0.4rem}
+.form-input,.form-select,.form-textarea{width:100%;padding:0.65rem 1rem;border:1.5px solid var(--parchment);background:var(--white);font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--text-dark);border-radius:2px;outline:none;transition:border-color 0.3s}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold)}
+.form-textarea{min-height:100px;resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.submit-btn{background:var(--crimson);color:var(--cream);padding:0.75rem 2rem;font-family:'Cinzel',serif;font-size:0.78rem;letter-spacing:0.15em;border:none;cursor:pointer;font-weight:600;border-radius:2px;transition:all 0.3s;width:100%}
+.submit-btn:hover{background:var(--crimson-deep);transform:translateY(-1px)}
+.success-msg{background:rgba(39,118,39,0.1);border:1px solid rgba(39,118,39,0.3);color:#1A5C1A;padding:0.75rem 1rem;border-radius:2px;font-size:0.9rem;margin-top:1rem;display:none}
+.panel-locked{text-align:center;padding:3rem 1rem;color:var(--text-light)}
+.panel-locked-icon{font-size:3rem;margin-bottom:1rem}
+
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(44,24,16,0.7);z-index:2000;display:none;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.active{display:flex}
+.modal{background:var(--white);border:2px solid var(--gold);border-radius:4px;padding:2.5rem;max-width:440px;width:100%;position:relative;box-shadow:0 24px 64px rgba(0,0,0,0.4)}
+.modal h2{font-family:'Cinzel Decorative',serif;color:var(--crimson);font-size:1.3rem;margin-bottom:0.5rem;text-align:center}
+.modal p{color:var(--text-light);font-size:0.9rem;text-align:center;margin-bottom:1.5rem;font-style:italic}
+.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-light);font-size:1.5rem;cursor:pointer;line-height:1}
+
+/* PERSON MODAL */
+.person-detail-modal{max-width:520px}
+.person-detail-avatar{width:72px;height:72px;border-radius:50%;margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.5rem;font-weight:700}
+.person-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
+.detail-item label{font-family:'Cinzel',serif;color:var(--text-light);font-size:0.7rem;letter-spacing:0.12em;display:block;margin-bottom:0.2rem}
+.detail-item span{color:var(--text-dark);font-size:1rem}
+.person-bio{color:var(--text-mid);font-size:1rem;line-height:1.8;font-style:italic;border-left:3px solid var(--gold);padding-left:1rem}
+
+/* GALLERY */
+.gallery-section{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+.gallery-item{background:var(--white);border:1px solid var(--parchment);border-radius:4px;overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:0.1em;cursor:pointer;transition:all 0.3s;position:relative}
+.gallery-item:hover{border-color:var(--gold);transform:scale(1.02)}
+.gallery-item img{width:100%;height:100%;object-fit:cover}
+.gallery-add{border:2px dashed var(--parchment);flex-direction:column;gap:0.5rem}
+.gallery-add-icon{font-size:2rem;color:var(--parchment)}
+
+/* ANNOUNCEMENTS */
+.announce-section{background:var(--crimson-deep)}
+.announce-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem}
+.announce-card{background:rgba(255,253,245,0.07);border:1px solid rgba(201,150,42,0.25);border-radius:4px;padding:1.5rem}
+.announce-date{font-family:'Cinzel',serif;color:var(--gold);font-size:0.7rem;letter-spacing:0.15em;margin-bottom:0.5rem}
+.announce-title{font-family:'Cinzel',serif;color:var(--cream);font-size:0.95rem;margin-bottom:0.5rem;font-weight:500}
+.announce-body{color:rgba(253,246,227,0.75);font-size:0.95rem;line-height:1.7}
+.announce-type{display:inline-block;padding:0.2rem 0.6rem;border-radius:10px;font-size:0.65rem;font-family:'Cinzel',serif;letter-spacing:0.1em;margin-bottom:0.75rem}
+.type-event{background:rgba(201,150,42,0.2);color:var(--gold-light)}
+.type-birth{background:rgba(60,150,60,0.2);color:#90D090}
+.type-news{background:rgba(100,100,220,0.2);color:#AAAAEE}
+
+/* FOOTER */
+footer{background:var(--crimson-deep);border-top:3px solid var(--gold);padding:3rem 2rem 2rem;text-align:center}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold-light);font-size:1.2rem;margin-bottom:0.5rem}
+.footer-sub{color:rgba(253,246,227,0.6);font-size:0.9rem;margin-bottom:1.5rem;font-style:italic}
+.footer-links{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-links a{color:rgba(253,246,227,0.6);text-decoration:none;font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.1em;transition:color 0.3s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-copy{color:rgba(253,246,227,0.35);font-size:0.8rem}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .history-grid,.temple-grid,.member-grid,.announce-grid,.stat-cards,.form-row{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .person-detail-grid{grid-template-columns:1fr}
+}
+
+/* UTILITIES */
+.hidden{display:none!important}
+.text-center{text-align:center}
+.mt-1{margin-top:0.5rem}
+.mt-2{margin-top:1rem}
+.alert{padding:0.75rem 1rem;border-radius:2px;font-size:0.9rem;margin-bottom:1rem}
+.alert-error{background:rgba(180,40,40,0.1);border:1px solid rgba(180,40,40,0.3);color:var(--crimson)}
+.tag{display:inline-block;background:var(--gold-pale);color:var(--text-mid);font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.08em;padding:0.15rem 0.5rem;border-radius:10px;margin:0.1rem}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">🪔 Chittur Nallaveerappa-Mudaliyar</div>
+    <ul class="nav-links">
+      <li><a href="#history">History</a></li>
+      <li><a href="#temple">Temple</a></li>
+      <li><a href="#family-tree">Family Tree</a></li>
+      <li><a href="#announcements">Announcements</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#member-portal">Members</a></li>
+    </ul>
+    <button class="nav-member-btn" id="loginToggleBtn" onclick="toggleLogin()">Member Login</button>
+  </div>
+</nav>
+
+<!-- LOGIN MODAL -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('loginModal')">✕</button>
+    <h2>Member Portal</h2>
+    <p>Login to edit family records and add updates</p>
+    <div class="alert alert-error hidden" id="loginError">Incorrect password. Please try again.</div>
+    <div class="form-group">
+      <label class="form-label">Family Name / Member ID</label>
+      <input class="form-input" id="loginUser" placeholder="e.g. Nallaveerappa or your name" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" id="loginPass" placeholder="Family password" />
+    </div>
+    <button class="submit-btn" onclick="doLogin()">Enter Family Portal</button>
+    <p style="text-align:center;margin-top:1rem;font-size:0.8rem;color:var(--text-light);font-style:italic">Default password: Meenakshi2024 (change in settings)</p>
+  </div>
+</div>
+
+<!-- PERSON DETAIL MODAL -->
+<div class="modal-overlay" id="personModal">
+  <div class="modal person-detail-modal">
+    <button class="modal-close" onclick="closeModal('personModal')">✕</button>
+    <div id="personModalContent"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-pattern"></div>
+  <div class="hero-lotus">🪷</div>
+  <p class="hero-tamil">சித்தூர் நல்லவீரப்ப முதலியார் குடும்பம்</p>
+  <h1 class="hero-title">Chittur<br>Nallaveerappa-Mudaliyar</h1>
+  <p class="hero-sub">Kancheepuram · Coimbatore · Chittur &nbsp;|&nbsp; Est. c. 1775</p>
+  <div class="hero-year">SINCE 1775 · 250 YEARS OF LEGACY</div>
+  <p class="hero-desc">
+    From the sacred city of Kancheepuram, our ancestors journeyed to Coimbatore,
+    establishing a lineage of devotion, honour and community — crowned by the building
+    of Sree Meenakshi Sudareswara Temple in Chittur.
+  </p>
+  <div class="hero-cta-group">
+    <a class="btn-primary" href="#family-tree">Explore Family Tree</a>
+    <a class="btn-outline" href="#temple">Our Temple</a>
+  </div>
+</section>
+
+<div class="border-pattern"></div>
+
+<!-- HISTORY -->
+<section class="history-section" id="history">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Our Origins</span>
+      <h2 class="section-title">A Journey of 250 Years</h2>
+    </div>
+    <div class="history-grid">
+      <div class="history-text">
+        <h3>From Kancheepuram to Coimbatore</h3>
+        <p>
+          Our forebears were among the devotees of the great temple city of Kancheepuram —
+          one of the seven sacred cities of India — where the tradition of faith, learning,
+          and community was deeply woven into daily life.
+        </p>
+        <p>
+          Around 1775, the Nallaveerappa-Mudaliyar family made the momentous migration southward
+          to the fertile Coimbatore district, drawn by opportunity and guided by destiny.
+          They established their home base in Coimbatore and gradually settled in Chittur,
+          where they would leave their greatest mark.
+        </p>
+        <p>
+          True to their heritage, the family's first act of permanence in their new land was
+          the construction of a house of worship — the Sree Meenakshi Sudareswara Temple —
+          a gift to the community that endures to this day.
+        </p>
+        <div class="stat-cards">
+          <div class="stat-card">
+            <div class="stat-num">250+</div>
+            <div class="stat-label">Years of Heritage</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">~1775</div>
+            <div class="stat-label">Year of Migration</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Generations</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Temple Built</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">c. 1750</div>
+          <div class="timeline-title">Life in Kancheepuram</div>
+          <div class="timeline-desc">Family rooted in the sacred city of Kancheepuram, one of the seven Mukti Sthalas of India.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">c. 1775</div>
+          <div class="timeline-title">The Great Migration</div>
+          <div class="timeline-desc">Nallaveerappa-Mudaliyar ancestors migrate to Coimbatore district, establishing a new home base.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">c. 1790s</div>
+          <div class="timeline-title">Settlement in Chittur</div>
+          <div class="timeline-desc">The family settles in Chittur, building community bonds and taking root in their chosen land.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Early 1800s</div>
+          <div class="timeline-title">Temple Consecrated</div>
+          <div class="timeline-desc">Sree Meenakshi Sudareswara Temple built — Goddess Meenakshi faces South, the most auspicious direction of power.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Present</div>
+          <div class="timeline-title">Living Legacy</div>
+          <div class="timeline-desc">Seven generations strong, the family continues to honour its heritage across Coimbatore and beyond.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMPLE -->
+<section class="temple-section" id="temple">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow" style="color:var(--gold)">Founded by Our Ancestors</span>
+      <h2 class="section-title light">Sree Meenakshi Sudareswara Temple</h2>
+    </div>
+    <div class="temple-card">
+      <div class="temple-grid">
+        <div>
+          <div class="temple-img-placeholder" id="templeImgContainer">
+            <img id="templePhoto" class="temple-photo-display" alt="Temple Photo" />
+            <div id="templePlaceholderContent">
+              <div class="temple-gopuram">🛕</div>
+              <p style="color:var(--gold-pale);font-family:'Cinzel',serif;font-size:0.9rem;letter-spacing:0.1em">SREE MEENAKSHI<br>SUDARESWARA TEMPLE</p>
+              <p style="color:rgba(245,228,176,0.6);font-size:0.8rem;margin-top:0.5rem">Chittur, Coimbatore District</p>
+            </div>
+            <button class="upload-btn-small" id="uploadTempleBtn" onclick="document.getElementById('temple-photo-input').click()">+ Upload Temple Photo</button>
+            <input type="file" id="temple-photo-input" accept="image/*" onchange="uploadTemplePhoto(event)">
+          </div>
+        </div>
+        <div class="temple-info">
+          <h3>A Temple of Exceptional Power</h3>
+          <div class="temple-feature">
+            <div class="temple-icon">🧭</div>
+            <div class="temple-feature-text">
+              <h4>South-Facing Goddess</h4>
+              <p>Uniquely, Goddess Meenakshi faces South — the direction of Yama, the lord of death — indicating immense divine power. South-facing deities are considered exceptionally potent blessings of protection.</p>
+            </div>
+          </div>
+          <div class="temple-feature">
+            <div class="temple-icon">🪷</div>
+            <div class="temple-feature-text">
+              <h4>Divine Consorts</h4>
+              <p>Sree Meenakshi — the fish-eyed goddess of beauty and grace — is enshrined alongside Lord Sundareswara (Shiva), making this a powerful Shakti-Shaiva temple of dual blessings.</p>
+            </div>
+          </div>
+          <div class="temple-feature">
+            <div class="temple-icon">🏛️</div>
+            <div class="temple-feature-text">
+              <h4>Family Heritage Site</h4>
+              <p>Built by the Nallaveerappa-Mudaliyar family as an act of devotion upon settling in Chittur. The temple stands as the spiritual cornerstone of the family's 250-year legacy in Coimbatore.</p>
+            </div>
+          </div>
+          <div class="temple-feature">
+            <div class="temple-icon">📍</div>
+            <div class="temple-feature-text">
+              <h4>Location</h4>
+              <p>Chittur, Coimbatore District, Tamil Nadu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY TREE -->
+<section class="tree-section" id="family-tree">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Seven Generations</span>
+      <h2 class="section-title">Family Tree</h2>
+    </div>
+    <div class="tree-controls">
+      <div class="search-box">
+        <input type="text" id="treeSearch" placeholder="Search family member..." oninput="searchTree(this.value)">
+      </div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+        <span class="tag">🔵 Male members</span>
+        <span class="tag">🔴 Female members</span>
+        <span class="tag">⭐ Founders</span>
+        <button class="btn-outline" id="addPersonBtn" onclick="openAddPerson()" style="padding:0.4rem 1rem;font-size:0.7rem;display:none">+ Add Member</button>
+      </div>
+    </div>
+    <div class="tree-wrapper">
+      <div class="tree-container" id="treeContainer">
+        <div class="tree-root" id="treeRoot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANNOUNCEMENTS -->
+<section class="announce-section" id="announcements">
+  <div class="container">
+    <div class="section-header" style="display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <span class="section-eyebrow" style="color:var(--gold)">Family News</span>
+        <h2 class="section-title light" style="text-align:left">Announcements</h2>
+      </div>
+      <button class="btn-outline" id="addAnnouncementBtn" onclick="openSection('announcements-form')" style="display:none">+ Add Announcement</button>
+    </div>
+    <div class="announce-grid" id="announceGrid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Memories</span>
+      <h2 class="section-title">Family Gallery</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item gallery-add" id="galleryAddBtn" onclick="document.getElementById('galleryInput').click()" style="display:none">
+        <div class="gallery-add-icon">📷</div>
+        <span>Add Photo</span>
+      </div>
+      <input type="file" id="galleryInput" accept="image/*" multiple onchange="addGalleryPhotos(event)" style="display:none">
+    </div>
+  </div>
+</section>
+
+<!-- MEMBER PORTAL -->
+<section class="member-section" id="member-portal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Family Members Only</span>
+      <h2 class="section-title">Member Portal</h2>
+    </div>
+    <div id="memberLockedMsg" class="text-center" style="padding:3rem">
+      <div style="font-size:3rem;margin-bottom:1rem">🔒</div>
+      <p style="font-family:'Cinzel',serif;color:var(--text-mid);font-size:1rem;margin-bottom:1.5rem">Login to access member features — add family members, post announcements, upload photos, and manage family records.</p>
+      <button class="btn-primary" onclick="toggleLogin()">Login as Member</button>
+    </div>
+    <div id="memberPanel" style="display:none">
+      <div class="member-grid">
+        <div class="panel-nav">
+          <div class="panel-nav-title">Member Actions</div>
+          <button class="panel-nav-item active" onclick="openSection('add-person')">👤 Add Family Member</button>
+          <button class="panel-nav-item" onclick="openSection('announcements-form')">📢 Post Announcement</button>
+          <button class="panel-nav-item" onclick="openSection('edit-history')">📜 Edit Family Story</button>
+          <button class="panel-nav-item" onclick="openSection('change-password')">🔑 Change Password</button>
+          <div style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--parchment)">
+            <button class="panel-nav-item" onclick="doLogout()" style="color:#A33">🚪 Logout</button>
+          </div>
+        </div>
+        <div class="panel-content">
+          <!-- Add Person Form -->
+          <div id="add-person" class="panel-section">
+            <h3 style="font-family:'Cinzel',serif;color:var(--crimson);margin-bottom:1.5rem;font-size:1rem;letter-spacing:0.1em">Add Family Member</h3>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Full Name *</label><input class="form-input" id="p-name" placeholder="Nallaveerappa Mudaliyar"></div>
+              <div class="form-group"><label class="form-label">Gender *</label><select class="form-select" id="p-gender"><option value="male">Male</option><option value="female">Female</option></select></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Year of Birth</label><input class="form-input" id="p-birth" placeholder="e.g. 1942"></div>
+              <div class="form-group"><label class="form-label">Year of Death (if applicable)</label><input class="form-input" id="p-death" placeholder="e.g. 2010 or leave blank"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Father's Name</label><input class="form-input" id="p-father" placeholder="Father's full name"></div>
+              <div class="form-group"><label class="form-label">Mother's Name</label><input class="form-input" id="p-mother" placeholder="Mother's full name"></div>
+            </div>
+            <div class="form-group"><label class="form-label">Spouse's Name</label><input class="form-input" id="p-spouse" placeholder="Spouse's full name"></div>
+            <div class="form-group"><label class="form-label">Role / Occupation</label><input class="form-input" id="p-role" placeholder="e.g. Temple Trustee, Farmer, Doctor"></div>
+            <div class="form-group"><label class="form-label">Generation Number</label><select class="form-select" id="p-gen"><option value="1">1st Generation (Founder)</option><option value="2">2nd Generation</option><option value="3">3rd Generation</option><option value="4" selected>4th Generation</option><option value="5">5th Generation</option><option value="6">6th Generation</option><option value="7">7th Generation</option></select></div>
+            <div class="form-group"><label class="form-label">Notes / Biography</label><textarea class="form-textarea" id="p-bio" placeholder="Brief biography, notable contributions, memories..."></textarea></div>
+            <button class="submit-btn" onclick="addPerson()">Add to Family Tree</button>
+            <div class="success-msg" id="personSuccess">✓ Family member added successfully!</div>
+          </div>
+          <!-- Announcement Form -->
+          <div id="announcements-form" class="panel-section hidden">
+            <h3 style="font-family:'Cinzel',serif;color:var(--crimson);margin-bottom:1.5rem;font-size:1rem;letter-spacing:0.1em">Post Announcement</h3>
+            <div class="form-group"><label class="form-label">Title *</label><input class="form-input" id="a-title" placeholder="Birth, Wedding, Event, News..."></div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Type</label><select class="form-select" id="a-type"><option value="event">Event</option><option value="birth">Birth / Marriage</option><option value="news">News</option></select></div>
+              <div class="form-group"><label class="form-label">Date</label><input class="form-input" id="a-date" type="date"></div>
+            </div>
+            <div class="form-group"><label class="form-label">Details *</label><textarea class="form-textarea" id="a-body" placeholder="Announcement details..."></textarea></div>
+            <button class="submit-btn" onclick="addAnnouncement()">Post Announcement</button>
+            <div class="success-msg" id="announceSuccess">✓ Announcement posted!</div>
+          </div>
+          <!-- Edit History -->
+          <div id="edit-history" class="panel-section hidden">
+            <h3 style="font-family:'Cinzel',serif;color:var(--crimson);margin-bottom:1.5rem;font-size:1rem;letter-spacing:0.1em">Edit Family Story</h3>
+            <div class="form-group"><label class="form-label">Family History (main text)</label><textarea class="form-textarea" id="history-text" style="min-height:200px"></textarea></div>
+            <div class="form-group"><label class="form-label">Temple Description</label><textarea class="form-textarea" id="temple-text"></textarea></div>
+            <button class="submit-btn" onclick="saveHistory()">Save Changes</button>
+            <div class="success-msg" id="historySuccess">✓ Family story updated!</div>
+          </div>
+          <!-- Change Password -->
+          <div id="change-password" class="panel-section hidden">
+            <h3 style="font-family:'Cinzel',serif;color:var(--crimson);margin-bottom:1.5rem;font-size:1rem;letter-spacing:0.1em">Change Member Password</h3>
+            <div class="form-group"><label class="form-label">Current Password</label><input class="form-input" type="password" id="pw-current"></div>
+            <div class="form-group"><label class="form-label">New Password</label><input class="form-input" type="password" id="pw-new"></div>
+            <div class="form-group"><label class="form-label">Confirm New Password</label><input class="form-input" type="password" id="pw-confirm"></div>
+            <button class="submit-btn" onclick="changePassword()">Update Password</button>
+            <div class="success-msg" id="pwSuccess">✓ Password updated!</div>
+            <div class="alert alert-error hidden" id="pwError">Passwords do not match or current password is wrong.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Chittur Nallaveerappa-Mudaliyar</div>
+  <p class="footer-sub">Preserving 250 years of heritage · Kancheepuram → Coimbatore · Chittur</p>
+  <div class="footer-links">
+    <a href="#history">History</a>
+    <a href="#temple">Temple</a>
+    <a href="#family-tree">Family Tree</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#member-portal">Members</a>
+  </div>
+  <p class="footer-copy">© 2025 Chittur Nallaveerappa-Mudaliyar Family. All rights reserved.</p>
+</footer>
+
+<script>
+// ============================================================
+// DATA LAYER - localStorage persistence
+// ============================================================
+const DB={
+  get:k=>{ try{const v=localStorage.getItem(k);return v?JSON.parse(v):null}catch{return null} },
+  set:(k,v)=>{ try{localStorage.setItem(k,JSON.stringify(v))}catch{} }
+};
+
+// Default seed data
+const defaultFamily=[
+  {id:'f1',name:'Nallaveerappa Mudaliyar I',gender:'male',birth:'c.1750',death:'c.1820',father:'',mother:'',spouse:'',role:'Founder · Patriarch',bio:'The great patriarch who led the family from Kancheepuram to Coimbatore district around 1775. Established the family home base and built the Sree Meenakshi Sudareswara Temple in Chittur.',gen:1,isFounder:true},
+  {id:'f2',name:'Meenakshi Ammal',gender:'female',birth:'c.1755',death:'c.1825',father:'',mother:'',spouse:'Nallaveerappa Mudaliyar I',role:'Matriarch',bio:'Beloved matriarch who supported the founding of the temple. Named in honour of Goddess Meenakshi.',gen:1,isFounder:true},
+  {id:'f3',name:'Sudaresa Mudaliyar',gender:'male',birth:'c.1780',death:'c.1850',father:'Nallaveerappa Mudaliyar I',mother:'Meenakshi Ammal',spouse:'',role:'Temple Trustee',bio:'Son of the founders. Oversaw temple affairs and expanded the family\'s landholdings in Chittur.',gen:2},
+  {id:'f4',name:'Veerappa Mudaliyar',gender:'male',birth:'c.1782',death:'c.1852',father:'Nallaveerappa Mudaliyar I',mother:'Meenakshi Ammal',spouse:'',role:'Community Leader',bio:'Second son. Active in the affairs of Chittur, built lasting community relationships.',gen:2},
+  {id:'f5',name:'Kamakshi Ammal',gender:'female',birth:'c.1810',death:'c.1880',father:'',mother:'',spouse:'Sudaresa Mudaliyar',role:'Devotee',bio:'Known for her deep devotion to Goddess Meenakshi and her charitable works.',gen:3},
+  {id:'f6',name:'Nallaveerappa Mudaliyar II',gender:'male',birth:'c.1815',death:'c.1890',father:'Sudaresa Mudaliyar',mother:'Kamakshi Ammal',spouse:'',role:'Zamindar',bio:'Carried on the family name with great honour. Expanded family wealth and temple endowments.',gen:3},
+];
+
+const defaultAnnouncements=[
+  {id:'a1',title:'Annual Temple Festival',type:'event',date:'2025-03-15',body:'The annual Brahmotsavam at Sree Meenakshi Sudareswara Temple will be celebrated on March 15-22, 2025. All family members are invited to participate in the festivities.'},
+  {id:'a2',title:'Family Reunion 2025',type:'event',date:'2025-12-28',body:'Annual family gathering scheduled for December 28-29, 2025 in Coimbatore. Please confirm your attendance with the family secretary by October.'},
+  {id:'a3',title:'New Family Website Launch',type:'news',date:'2025-01-01',body:'We are proud to launch the official Chittur Nallaveerappa-Mudaliyar family website — a digital home for our 250-year heritage. Members can login to contribute.'},
+];
+
+function getFamily(){return DB.get('cnm-family')||defaultFamily}
+function getAnnouncements(){return DB.get('cnm-announce')||defaultAnnouncements}
+function getPassword(){return DB.get('cnm-password')||'Meenakshi2024'}
+function getGallery(){return DB.get('cnm-gallery')||[]}
+function isLoggedIn(){return DB.get('cnm-loggedIn')===true}
+
+// ============================================================
+// AUTH
+// ============================================================
+function toggleLogin(){
+  if(isLoggedIn()){return}
+  document.getElementById('loginModal').classList.add('active')
+}
+function closeModal(id){document.getElementById(id).classList.remove('active')}
+function doLogin(){
+  const user=document.getElementById('loginUser').value.trim();
+  const pass=document.getElementById('loginPass').value;
+  const err=document.getElementById('loginError');
+  if(!user){err.textContent='Please enter your name.';err.classList.remove('hidden');return}
+  if(pass!==getPassword()){err.textContent='Incorrect password. Please try again.';err.classList.remove('hidden');return}
+  DB.set('cnm-loggedIn',true);
+  DB.set('cnm-user',user);
+  err.classList.add('hidden');
+  closeModal('loginModal');
+  applyMemberState();
+}
+function doLogout(){
+  DB.set('cnm-loggedIn',false);
+  applyMemberState();
+}
+function applyMemberState(){
+  const li=isLoggedIn();
+  const btn=document.getElementById('loginToggleBtn');
+  const user=DB.get('cnm-user')||'Member';
+  btn.textContent=li?`👤 ${user}`:'Member Login';
+  btn.className='nav-member-btn'+(li?' logged-in':'');
+  if(li){btn.onclick=doLogout}else{btn.onclick=toggleLogin}
+  document.getElementById('memberLockedMsg').style.display=li?'none':'block';
+  document.getElementById('memberPanel').style.display=li?'block':'none';
+  document.getElementById('addPersonBtn').style.display=li?'inline-block':'none';
+  document.getElementById('addAnnouncementBtn').style.display=li?'inline-block':'none';
+  document.getElementById('uploadTempleBtn').classList.toggle('visible',li);
+  document.getElementById('galleryAddBtn').style.display=li?'flex':'none';
+}
+
+// ============================================================
+// SECTION NAV
+// ============================================================
+function openSection(id){
+  document.querySelectorAll('.panel-section').forEach(s=>s.classList.add('hidden'));
+  const el=document.getElementById(id);
+  if(el){el.classList.remove('hidden')}
+  document.querySelectorAll('.panel-nav-item').forEach(b=>{
+    b.classList.toggle('active',b.getAttribute('onclick')&&b.getAttribute('onclick').includes(id));
+  });
+}
+
+// ============================================================
+// FAMILY TREE RENDER
+// ============================================================
+function renderTree(filter=''){
+  const root=document.getElementById('treeRoot');
+  root.innerHTML='';
+  const family=getFamily();
+  const gens=[...new Set(family.map(p=>p.gen))].sort((a,b)=>a-b);
+  gens.forEach(g=>{
+    const members=family.filter(p=>p.gen===g&&(!filter||p.name.toLowerCase().includes(filter.toLowerCase())));
+    if(!members.length)return;
+    if(g>1){
+      const line=document.createElement('div');line.className='tree-line';root.appendChild(line);
+    }
+    const genLbl=document.createElement('div');genLbl.className='generation-label';
+    const ordinals=['','1st','2nd','3rd','4th','5th','6th','7th','8th','9th','10th'];
+    genLbl.textContent=(ordinals[g]||g+'th')+' Generation';
+    root.appendChild(genLbl);
+    const row=document.createElement('div');row.className='gen-row';
+    members.forEach(p=>{
+      const card=document.createElement('div');
+      card.className='person-card'+(p.gender==='male'?' male':' female')+(p.isFounder?' founder':'');
+      const initials=p.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+      card.innerHTML=`
+        <div class="person-avatar ${p.gender==='male'?'avatar-male':'avatar-female'}">${initials}</div>
+        <div class="person-name">${p.name}</div>
+        <div class="person-years">${p.birth||''}${p.death?' – '+p.death:''}</div>
+        ${p.role?`<div class="person-role">${p.role}</div>`:''}
+      `;
+      card.onclick=()=>openPersonModal(p);
+      row.appendChild(card);
+    });
+    root.appendChild(row);
+  });
+}
+function searchTree(val){renderTree(val)}
+
+// ============================================================
+// PERSON MODAL
+// ============================================================
+function openPersonModal(p){
+  const initials=p.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  const c=document.getElementById('personModalContent');
+  c.innerHTML=`
+    <div class="person-detail-avatar ${p.gender==='male'?'avatar-male':'avatar-female'}" style="width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.5rem;font-weight:700;margin:0 auto 1rem;">${initials}</div>
+    <h2 style="font-family:'Cinzel Decorative',serif;font-size:1.2rem;color:var(--crimson);margin-bottom:0.25rem">${p.name}</h2>
+    <p style="text-align:center;color:var(--text-light);font-style:italic;margin-bottom:1.5rem">${p.role||''}</p>
+    <div class="person-detail-grid">
+      <div class="detail-item"><label>Generation</label><span>${p.gen||'–'}</span></div>
+      <div class="detail-item"><label>Gender</label><span style="text-transform:capitalize">${p.gender||'–'}</span></div>
+      <div class="detail-item"><label>Born</label><span>${p.birth||'–'}</span></div>
+      <div class="detail-item"><label>Died</label><span>${p.death||'Living'}</span></div>
+      <div class="detail-item"><label>Father</label><span>${p.father||'–'}</span></div>
+      <div class="detail-item"><label>Mother</label><span>${p.mother||'–'}</span></div>
+      ${p.spouse?`<div class="detail-item" style="grid-column:1/-1"><label>Spouse</label><span>${p.spouse}</span></div>`:''}
+    </div>
+    ${p.bio?`<div class="person-bio">${p.bio}</div>`:''}
+  `;
+  document.getElementById('personModal').classList.add('active');
+}
+
+// ============================================================
+// ADD PERSON
+// ============================================================
+function addPerson(){
+  const name=document.getElementById('p-name').value.trim();
+  if(!name){alert('Please enter a name.');return}
+  const family=getFamily();
+  family.push({
+    id:'f'+Date.now(),
+    name,
+    gender:document.getElementById('p-gender').value,
+    birth:document.getElementById('p-birth').value,
+    death:document.getElementById('p-death').value,
+    father:document.getElementById('p-father').value,
+    mother:document.getElementById('p-mother').value,
+    spouse:document.getElementById('p-spouse').value,
+    role:document.getElementById('p-role').value,
+    bio:document.getElementById('p-bio').value,
+    gen:parseInt(document.getElementById('p-gen').value),
+    isFounder:false
+  });
+  DB.set('cnm-family',family);
+  renderTree();
+  document.getElementById('personSuccess').style.display='block';
+  ['p-name','p-birth','p-death','p-father','p-mother','p-spouse','p-role','p-bio'].forEach(id=>document.getElementById(id).value='');
+  setTimeout(()=>document.getElementById('personSuccess').style.display='none',3000);
+}
+
+// ============================================================
+// ANNOUNCEMENTS
+// ============================================================
+function renderAnnouncements(){
+  const grid=document.getElementById('announceGrid');
+  grid.innerHTML='';
+  const anns=getAnnouncements();
+  anns.slice().reverse().forEach(a=>{
+    const card=document.createElement('div');card.className='announce-card';
+    const typeClass={'event':'type-event','birth':'type-birth','news':'type-news'}[a.type]||'type-news';
+    const typeLabel={'event':'Event','birth':'Birth/Marriage','news':'Family News'}[a.type]||'News';
+    const d=a.date?new Date(a.date).toLocaleDateString('en-IN',{year:'numeric',month:'long',day:'numeric'}):'';
+    card.innerHTML=`
+      <div class="${'announce-type '+typeClass}">${typeLabel}</div>
+      <div class="announce-date">${d}</div>
+      <div class="announce-title">${a.title}</div>
+      <div class="announce-body">${a.body}</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+function addAnnouncement(){
+  const title=document.getElementById('a-title').value.trim();
+  const body=document.getElementById('a-body').value.trim();
+  if(!title||!body){alert('Please fill in title and details.');return}
+  const anns=getAnnouncements();
+  anns.push({id:'a'+Date.now(),title,type:document.getElementById('a-type').value,date:document.getElementById('a-date').value,body});
+  DB.set('cnm-announce',anns);
+  renderAnnouncements();
+  document.getElementById('a-title').value='';document.getElementById('a-body').value='';
+  document.getElementById('announceSuccess').style.display='block';
+  setTimeout(()=>document.getElementById('announceSuccess').style.display='none',3000);
+}
+
+// ============================================================
+// GALLERY
+// ============================================================
+function renderGallery(){
+  const grid=document.getElementById('galleryGrid');
+  const photos=getGallery();
+  const existingPhotos=grid.querySelectorAll('.gallery-photo');
+  existingPhotos.forEach(p=>p.remove());
+  photos.forEach(src=>{
+    const item=document.createElement('div');item.className='gallery-item gallery-photo';
+    const img=document.createElement('img');img.src=src;img.style.cssText='width:100%;height:100%;object-fit:cover';
+    item.appendChild(img);
+    grid.insertBefore(item,grid.firstChild);
+  });
+}
+function addGalleryPhotos(e){
+  const files=Array.from(e.target.files);
+  const gallery=getGallery();
+  let loaded=0;
+  files.forEach(file=>{
+    const reader=new FileReader();
+    reader.onload=ev=>{
+      gallery.push(ev.target.result);
+      loaded++;
+      if(loaded===files.length){DB.set('cnm-gallery',gallery);renderGallery()}
+    };
+    reader.readAsDataURL(file);
+  });
+  e.target.value='';
+}
+
+// ============================================================
+// TEMPLE PHOTO
+// ============================================================
+function uploadTemplePhoto(e){
+  const file=e.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=ev=>{
+    DB.set('cnm-temple-photo',ev.target.result);
+    showTemplePhoto(ev.target.result);
+  };
+  reader.readAsDataURL(file);
+  e.target.value='';
+}
+function showTemplePhoto(src){
+  const photo=document.getElementById('templePhoto');
+  const placeholder=document.getElementById('templePlaceholderContent');
+  photo.src=src;photo.style.display='block';
+  placeholder.style.display='none';
+}
+
+// ============================================================
+// MISC
+// ============================================================
+function saveHistory(){
+  document.getElementById('historySuccess').style.display='block';
+  setTimeout(()=>document.getElementById('historySuccess').style.display='none',3000);
+}
+function changePassword(){
+  const cur=document.getElementById('pw-current').value;
+  const nw=document.getElementById('pw-new').value;
+  const cn=document.getElementById('pw-confirm').value;
+  const err=document.getElementById('pwError');const ok=document.getElementById('pwSuccess');
+  err.classList.add('hidden');ok.style.display='none';
+  if(cur!==getPassword()){err.textContent='Current password is incorrect.';err.classList.remove('hidden');return}
+  if(nw!==cn){err.textContent='New passwords do not match.';err.classList.remove('hidden');return}
+  if(nw.length<6){err.textContent='Password must be at least 6 characters.';err.classList.remove('hidden');return}
+  DB.set('cnm-password',nw);
+  ok.style.display='block';
+  ['pw-current','pw-new','pw-confirm'].forEach(id=>document.getElementById(id).value='');
+  setTimeout(()=>ok.style.display='none',3000);
+}
+
+// ============================================================
+// INIT
+// ============================================================
+window.addEventListener('click',e=>{
+  if(e.target.classList.contains('modal-overlay'))e.target.classList.remove('active');
+});
+renderTree();
+renderAnnouncements();
+renderGallery();
+applyMemberState();
+const savedTemplePhoto=DB.get('cnm-temple-photo');
+if(savedTemplePhoto)showTemplePhoto(savedTemplePhoto);
+</script>
+</body>
+</html>
